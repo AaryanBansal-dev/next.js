@@ -34,7 +34,7 @@ describe('filesystem-caching', () => {
   async function stop() {
     if (isNextDev) {
       // Give FileSystem Cache time to write to disk
-      // Turbopack is conffigured to wait 1s above.
+      // Turbopack is configured to wait 1s above.
       // Webpack has an idle timeout (after large changes) of 1s
       // and we give time a bit more to allow writing to disk
       await waitFor(3000)
